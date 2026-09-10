@@ -20,6 +20,7 @@ img{
 @media (min-width: 768px) {
   .container {
     grid-template-columns: 200px 1fr; 
+    grid-template-rows: auto auto;
     grid-template-areas: 
     head head
     info nav
