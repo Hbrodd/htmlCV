@@ -1,6 +1,6 @@
 img{
-    max-width: 100%;
-    height: auto;
+    max-width: 650px;
+    height: 100px;
 }
 
 .layout {
@@ -9,7 +9,7 @@ img{
   gap: 16px;                  
 }
 
-.information{  
+.infotext{  
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -17,21 +17,32 @@ img{
 }
 
 
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: 200px 1fr; 
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    head head
-    info nav
-    foot foot;
-  }
-.head { grid-area: head;}
-.info{grid-area: info;}
-.nav {grid-area: nav;}
-.foot {grid-area: foot;}
 
-.layout{
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "head head"
+    "info nav"
+    "foot foot";
+  }
+.head { grid-area: head;
+        text-align: center;
+      background-color: lightgreen;;}
+.info{grid-area: info; background-color: bisque;}
+.nav {grid-area: nav; background-color: lightcoral;}
+.foot {grid-area: foot; background-color: black;}
+
+.aboutMe{
+  text-align: center;
+}
+
+.infotext{
+    grid-template-columns: 150px 150px;
+    background-color: azure;
+}
+.portfolioInfo{
+  min-width: 0;
 }
 }
