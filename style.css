@@ -21,26 +21,30 @@ img{
 @media (min-width: 768px) {
   .layout {
     grid-template-columns: 1fr 200px;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas: 
     "head head"
     "info nav"
     "foot foot";
+    background-color: aliceblue;
   }
 .head { grid-area: head;
         text-align: center;
-      background-color: lightgreen;;}
+        padding-right: 200px;
+        background-color: lightgreen;}
 .info{grid-area: info; background-color: bisque;}
 .nav {grid-area: nav; background-color: lightcoral;}
-.foot {grid-area: foot; background-color: black;}
+.foot {grid-area: foot; background-color: rgb(194, 9, 9);}
 
 .aboutMe{
+  background-color: green;
   text-align: center;
 }
 
 .infotext{
     grid-template-columns: 150px 150px;
     background-color: azure;
+    margin-left: 10%;
 }
 .portfolioInfo{
   min-width: 0;
