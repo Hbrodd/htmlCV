@@ -1,0 +1,37 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;                  
+}
+
+.information{  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 200px 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    head head
+    info nav
+    foot foot;
+  }
+.head { grid-area: head;}
+.info{grid-area: info;}
+.nav {grid-area: nav;}
+.foot {grid-area: foot;}
+
+.layout{
+    grid-template-columns: 1fr 1fr;
+}
+}
