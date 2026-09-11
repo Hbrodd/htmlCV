@@ -1,3 +1,7 @@
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
 img{
     max-width: 650px;
     height: 100px;
@@ -7,7 +11,9 @@ img{
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;    
-  background-color: lightgray;     
+  background-color: lightgray; 
+  min-height: 100vh;
+    min-height: 100dvh;    
 }
 
 .infotext{  
@@ -16,29 +22,46 @@ img{
     gap: 16px;
 
 }
+.head {text-align: center;
+        /*padding-right: 200px;*/
+        }
 
-.foot{background-color: darkgrey;}
+.nav{text-align: center;}
+
+.aboutMe{
+  padding: 10px;
+  border-bottom: 2px solid black;;
+  text-align: center;
+}
+
+.foot{background-color: darkgrey;
+      padding-top: 5px;}
 
 
 
 @media (min-width: 768px) {
   .layout {
     grid-template-columns: 1fr 200px;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto 50px;
     grid-template-areas: 
     "head nav"
     "info nav"
     "foot foot";
     grid-gap: 0cap;
     background-color: lightgrey;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 .head { grid-area: head;
         text-align: center;
         /*padding-right: 200px;*/
         }
 .info{grid-area: info;}
-.nav {grid-area: nav; border-left: 2px solid black; border-bottom: 2px solid black; border-top: 2px solid black;}
-.foot {grid-area: foot; background-color: darkgray; padding-top: 5px;}
+.nav {grid-area: nav; border-left: 2px solid black;}
+.nav ul{list-style: none;}
+.foot {grid-area: foot; background-color: darkgray; height: auto;}
+
+
 
 .aboutMe{
   padding: 10px;
