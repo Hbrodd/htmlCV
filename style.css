@@ -6,7 +6,8 @@ img{
 .layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;                  
+  gap: 16px;    
+  background-color: lightgray;     
 }
 
 .infotext{  
@@ -16,6 +17,8 @@ img{
 
 }
 
+.foot{background-color: darkgrey;}
+
 
 
 @media (min-width: 768px) {
@@ -23,27 +26,29 @@ img{
     grid-template-columns: 1fr 200px;
     grid-template-rows: auto auto 1fr;
     grid-template-areas: 
-    "head head"
+    "head nav"
     "info nav"
     "foot foot";
-    background-color: aliceblue;
+    grid-gap: 0cap;
+    background-color: lightgrey;
   }
 .head { grid-area: head;
         text-align: center;
-        padding-right: 200px;
-        background-color: lightgreen;}
-.info{grid-area: info; background-color: bisque;}
-.nav {grid-area: nav; background-color: lightcoral;}
-.foot {grid-area: foot; background-color: rgb(194, 9, 9);}
+        /*padding-right: 200px;*/
+        }
+.info{grid-area: info;}
+.nav {grid-area: nav; border-left: 2px solid black; border-bottom: 2px solid black; border-top: 2px solid black;}
+.foot {grid-area: foot; background-color: darkgray; padding-top: 5px;}
 
 .aboutMe{
-  background-color: green;
+  padding: 10px;
+  border-bottom: 2px solid black;;
   text-align: center;
 }
 
 .infotext{
-    grid-template-columns: 150px 150px;
-    background-color: azure;
+    grid-template-columns: 150px 300px;
+    padding-bottom: 20px;
     margin-left: 10%;
 }
 .portfolioInfo{
