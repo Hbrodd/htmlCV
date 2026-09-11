@@ -24,7 +24,8 @@ img{
 }
 .head {text-align: center;
         /*padding-right: 200px;*/
-        }
+}
+        
 
 .nav{text-align: center;}
 
@@ -32,6 +33,11 @@ img{
   padding: 10px;
   border-bottom: 2px solid black;;
   text-align: center;
+}
+
+.aboutMe img{
+  max-width: 250px;
+    height: 250px;
 }
 
 .foot{background-color: darkgrey;
@@ -43,7 +49,7 @@ img{
 @media (min-width: 768px) {
   .layout {
     grid-template-columns: 1fr 200px;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas: 
     "head nav"
     "info nav"
