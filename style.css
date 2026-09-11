@@ -35,7 +35,8 @@ img{
 }
 
 .foot{background-color: darkgrey;
-      padding-top: 5px;}
+      padding-top: 5px;
+    text-align: center; text-decoration-color: black;}
 
 
 
@@ -59,7 +60,7 @@ img{
 .info{grid-area: info;}
 .nav {grid-area: nav; border-left: 2px solid black;}
 .nav ul{list-style: none;}
-.foot {grid-area: foot; background-color: darkgray; height: auto;}
+.foot {grid-area: foot; background-color: darkgray; height: auto; text-align: center;}
 
 
 
